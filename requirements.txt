@@ -3,8 +3,3 @@ plotly
 pandas
 supabase==2.15.0
 python-dotenv
-openai
-requests
-praw
-playwright
-app-store-scraper
