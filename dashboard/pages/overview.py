@@ -2,6 +2,17 @@ import streamlit as st
 from datetime import datetime, timedelta
 from utils.db import supabase
 
+def show():
+    # TEMPORARY DEBUG — remove after fixing
+    try:
+        st.write("URL:", st.secrets["SUPABASE_URL"])
+        st.write("Key starts with:", st.secrets["SUPABASE_KEY"][:20])
+    except Exception as e:
+        st.error(f"Secret error: {e}")
+import streamlit as st
+from datetime import datetime, timedelta
+from utils.db import supabase
+
 
 def show():
     st.title("🏠 Portfolio Intelligence Overview")
